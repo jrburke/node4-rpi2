@@ -7,7 +7,7 @@ FROM resin/rpi-raspbian
 # install required packages, in one command
 RUN apt-get update
 
-RUN apt-get apt-utils
+RUN apt-get install apt-utils
 
 RUN apt-get install -y make gcc g++ python wget make ca-certificates
 ENV PYTHON /usr/bin/python2
